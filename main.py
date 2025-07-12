@@ -85,9 +85,9 @@ SECRET_TRIGGERS = {
 }
 
 secret_videos = {
-    "Secret Vibe : Ro": "videos/ro.mp4",
-    "Secret Vibe: Salamuffin": "videos/salamuffin.mp4",
-    "Secret Vibe: Alaa Cinnabon": "videos/alaa.mp4"
+    "Secret Vibe : Ro": "ro.mp4",
+    "Secret Vibe: Salamuffin": "salamuffin.mp4",
+    "Secret Vibe: Alaa Cinnabon": "alaa.mp4"
 }
 
 
@@ -96,7 +96,7 @@ UNSPLASH_ACCESS_KEY = "k0m0Vih89ebe8tHJphoaZrJZGWstGqH1B1TJMm_wHWo"
 
 def get_f1_fact(vibe):
     try:
-        with open("mood_data/f1_quotes_updated.json", "r") as file:
+        with open("f1_quotes_updated.json", "r") as file:
             facts = json.load(file)
             return facts.get(vibe, "Max Verstappen did something insane. Again. 💨")
     except:
